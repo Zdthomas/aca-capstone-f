@@ -3,29 +3,37 @@ import { Link, useNavigate } from "react-router-dom";
 import { AppBar, Toolbar, IconButton, Typography } from "@mui/material";
 import cookie from "cookie";
 import MenuIcon from "@mui/icons-material/Menu";
-import RandomNumberGenerator from "./RandomNumberGenerator";
+import { LogoutButton } from "./LogoutButton";
+
+
+
+
+
 
 
 const Navigation = () => {
     const navigate = useNavigate();
   
     return (
-      <AppBar position="static">
+      <AppBar sx={{backgroundColor: 'brown'}} position="static">
         <Toolbar>
           <IconButton color="inherit">
-            <MenuIcon />
+            {/* <MenuIcon /> */}
           </IconButton>
           <Typography variant="h6" style={{ flexGrow: "1" }}>
             
           </Typography>
           <ul className="nav-list">
             <li className="nav-list-item">
-              <Link to="/">Home</Link>
+              <Link to="/Characters">CharacterGen</Link>
             </li>
             <li className="nav-list-item">
-              <Link to="/randomnumbergenerator">Character Gen</Link>
+              <Link to="/Home">Home</Link>
             </li>
-            <li
+            <li className="nav-list-item">
+              <Link to="/registration">Register</Link>
+            </li>
+            {/* <li
               className="nav-list-item"
               onClick={() => {
                 document.cookie = cookie.serialize("loggedIn", null, {
@@ -35,7 +43,12 @@ const Navigation = () => {
               }}
             >
               Logout
+            </li> */}
+            <li className="nav-list-item">
+              <LogoutButton /> 
             </li>
+
+
           </ul>
         </Toolbar>
       </AppBar>

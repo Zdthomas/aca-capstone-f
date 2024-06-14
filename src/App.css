@@ -1,3 +1,9 @@
+body {
+  background-color: tan;
+
+
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +41,112 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.masterContainer {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  align-items: flex-start;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 5px;
+  border: 1px solid black;
+  margin: auto;
+  
+}
+
+/* .masterContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
+} */
+
+
+.statContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 10%;
+  border: 1px solid black;
+}
+
+
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 75%;
+  border: 1px solid black;
+  padding: 20px;
+  margin: 10px;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-basis: 60%;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  
+}
+
+.infoContainer input {
+  
+  margin: 5px 0;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid #CCC;
+  border: 1px solid black;
+  
+}
+
+.classContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 60%;
+  margin-top: 20px;
+  border: 1px solid black;
+}
+
+.classContainer select,
+.classContainer button {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.classImage img {
+  max-width: 300px;
+  margin-top: 10px;
+}
+
+.card-container {
+  border: solid 1px black;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  /* align-items: center; */
+  justify-content: space-around;
+  
+  margin: 1rem;
+  position: relative;
+}
+
+.card-img-top {
+  max-width: 300px;
+  margin-top: 10px;
+  height: 120px; 
+  /* object-fit: cover; */
 }

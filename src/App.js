@@ -1,22 +1,21 @@
 import './App.css';
 import React from 'react';
 import { BrowserRouter } from "react-router-dom";
-import RandomNumberGenerator from './components/RandomNumberGenerator';
+
 import Navigation from "./components/Navigation";
 import Router from "./Router";
+import Home from './components/Home';
+import { Auth0Provider } from '@auth0/auth0-react';
+import Navbar from "./components/NavBar"
 
 
 
 const App = () => {
   return (
     <div>
-      <BrowserRouter>
-        <Navigation />
-        {/* <h1>Random Number Generator</h1> */}
-        
-        <Router />
-      </BrowserRouter>
-    </div>
+      <Navigation />
+      <Router />
+  </div>
   );
 };
 
