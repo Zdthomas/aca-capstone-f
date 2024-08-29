@@ -6,7 +6,7 @@ import Navigation from "./components/Navigation";
 import Router from "./Router";
 import Home from './components/Home';
 import { Auth0Provider } from '@auth0/auth0-react';
-import Navbar from "./components/NavBar"
+
 
 
 
