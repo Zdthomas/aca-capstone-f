@@ -44,9 +44,9 @@ function Home () {
     
 
     return (
-
+      
       <div>
-        <h1>Characters</h1>
+        <h1>Character</h1>
           <div>
               {characters.map((character, index) => (
                   <SavedChar key={index} user={character} onDelete={fetchData} />
